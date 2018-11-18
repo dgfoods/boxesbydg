@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>DG | Contact</title>
+
+<head>
+<link rel="stylesheet" type="text/css" href="DGtemplate.css">
+</head>
+
+
+<style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+@font-face{
+  font-family: Bebas;
+  src: url(Bebas_Neue.ttf) format("truetype");
+}
+
+@font-face{
+
+  font-family: shoppingscript;
+  src: url(Shopping_Script_Demo.ttf) format("truetype");}
+
+
+ input,label,textarea{
+  color:#5F442A;
+  font-family:Bebas;
+ }
+
+
+body{
+    overflow: scroll;
+}
+
+/*Select all input elements that have a "text" type*/
+
+input,textarea {
+  box-sizing: border-box;
+  height: 40px;
+  margin:0; /*0 0 1em;*/
+  padding:0px;/* 1em;*/
+  border: none;
+  border-radius: 0.5em;
+  background-color:rgba(255,255,255,.3);
+  resize: none;
+  outline: none;
+  font-size:16px;
+  padding:5px 0  0;
+  text-indent: 10px;
+  letter-spacing:0.5px;
+}
+
+textarea{
+display: block;
+text-indent: 0px;
+padding:10px 0 0 10px;
+}
+
+/*Select all label elements that have a placeholder attributed that are immediately after input elements that have a "text" type and a required attribute*/
+
+input[required] + label[placeholder],
+textarea[required] + label[placeholder] {
+  display: block;
+  pointer-events: none;
+  line-height:0; /*50px;*/
+  margin-top:0;/* calc(-3em - 2px);*/
+  margin-bottom: 0;/*calc((3em - 1em) + 2px);*/
+}
+
+/*Selects the input elements which has a "text" type which has focus*/
+
+input[required]:focus,
+textarea[required]:focus {
+  border-color: #5F442A;
+  border-width:thin;
+}
+
+/*Inserts something before the content of each label element that has a placeholder and alt attribute that is immediately after an input element with a "text" type and a required attribute which is invalid*/
+
+input[required]:invalid + label[placeholder][alt]:before, 
+textarea[required]:invalid + label[placeholder][alt]:before {
+  content: attr(placeholder);
+  color:#5F442A;
+  font-size:16px;
+  letter-spacing:0.5px;
+}
+
+/*CHANGES WHEN YOU SELECT THE INPUT BOX*/
+
+/*Moves the alt attribute when the input box is focused*/
+
+input[required]:focus + label[placeholder]:before,
+input[required]:valid + label[placeholder]:before,
+textarea[required]:focus + label[placeholder]:before,
+textarea[required]:valid + label[placeholder]:before {
+  transition-duration: 0.2s;
+  -webkit-transform: translate(-1.5em, -1.5em) scale(0.9, 0.9);
+          transform: translate(-1.5em, -1.5em) scale(0.9, 0.9);
+  color:darkorange;
+}
+ 
+/*Inserts something before the content of each label element that has a placeholder attribute that is immediately after an input element with a "text" type and a required attribute which has focus*/
+
+input[required]:focus + label[placeholder]:before,
+textarea[required]:focus + label[placeholder]:before {
+  color: white;
+  content: attr(alt);
+}
+
+/*Inserts something before the content of each label element that has a placeholder attribute that is immediately after an input element with a "text" type and a required attribute*/
+
+input[required]+ label[placeholder]:before,
+textarea[required]+ label[placeholder]:before {
+  content: attr(placeholder);
+  display: inline-block;
+  margin: 20px 12.5px;/*0 calc(1em + 2px);*/
+  padding:0;/* 0 2px;*/
+  color:#5F442A;/*blue*/;
+  white-space: nowrap;
+  transition: 0.3s ease-in-out;
+}
+
+ .contactform{
+  position:absolute;
+  top:30%;
+  left:25%;
+  width:50%;
+  background-color:#FAD03E;
+  margin-bottom:10%;
+ }
+
+#a{
+  width:40%;
+  position:absolute;
+  left:5%;
+}
+
+#b{
+  width:40%;
+  position:absolute;
+  left:55%;
+}
+
+#c{
+  width:90%;
+  position:absolute;
+  left:5%;
+}
+
+#d{
+  width:90%;
+  position:absolute;
+  left:5%;
+  height:200px;
+  float:left;
+}
+
+input#button{
+  position:absolute;
+  left:30%;
+  width:40%;
+  background-color:Transparent;
+}
+
+
+label{
+  display:block;
+}
+
+</style>
+
+
+<body>
+
+
+<div class=banner>
+<h1>
+<a href="DGshop2.html">DG</a>
+</h1>
+</div>
+
+
+ <!--HAMBURGER MENU-->
+<nav role="navigation">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <a href="DGshop2.html"><li>Shop</li></a>
+      <a href="dgabout.html"><li>About</li></a>
+      <a href="dgtermsnew.html"><li>Terms</li></a>
+    </ul>
+  </div>
+</nav> 
+ 
+<div class=contactform>
+
+<form action="https://formspree.io/dgfoods@outlook.com" method="POST">
+
+
+<form autocomplete=off>
+<br>
+  <input id=a required='' type='text' name="name">
+  <label id=a alt='Enter First Name' placeholder='First Name'></label>
+  <input id=b required='' type='text' name="name">
+  <label id=b alt='Enter Last Name' placeholder='Last Name'></label>
+
+  <br><br><br><br>
+
+  <input id=c required='' type='text' name="_replyto">
+  <label id=c alt='enter EMAIL' placeholder='Email'></label>
+
+  <br><br><br><br>
+
+  <input id=c required='' type='phone' name="number">
+  <label id=c alt='enter PHONE' placeholder='PHONE'></label>
+
+  <br><br><br><br>
+
+  <textarea id=d required='' name="message" ></textarea>
+  <label id=d alt='add Message' placeholder='Message'></label>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <input id=button type="submit" value="Submit">
+  
+</form>
+
+ 
+</div>
+
+</body>
+
+</html>
