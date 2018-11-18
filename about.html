@@ -5,7 +5,6 @@
 
 <head>
 <link rel="stylesheet" type="text/css" href="DGtemplate.css">
-<link rel="shortcut icon" type="image/png" href="thumbnail_bigger.png">
 </head>
 
 <style>
@@ -37,7 +36,7 @@ height:100vh;
 
 .mainstory{
 width:100%;
-height:calc(calc(100% - 170px) * 3);
+height:calc(calc(100% - 170px) * 4);
 position:absolute;
 top:170px;
 background-color:#FAD03E;
@@ -241,33 +240,36 @@ and (max-device-width : 812px)
 and (-webkit-device-pixel-ratio : 3)
 and (orientation : landscape) {
 
-img#img1{
+.mainstory{
+width:100%;
+height:calc(calc(100% - 15vmax) * 4);
 position:absolute;
-left:-7%;
-top: 10%;
-width:650px; 
-height:875px;
+top:15vmax;
+
 }
 
+.story1{
+height:calc(100vh - 15vmax);
+}
+
+
+
+.story2{
+height:calc(100vh - 15vmax);
+}
+
+.story3{
+height:calc(100vh - 15vmax);
+}
+
+.story4{
+height:calc(100vh - 15vmax);
+}
 
 p#p1{
-position:absolute;
-top: 80%;
-left:50%;
-font-family: Bebas;
-letter-spacing: 0.5px;
-color:#5F442A;
-width: 350px;
+
 font-size:22px
 }
-
-img#img2{
-position:absolute;
-left:40%;
-top: 120%;
-width:635px; 
-height:925px;
-} 
 
 p#p2{
 
@@ -278,7 +280,6 @@ p#p3{
 
 font-size:22px
 }
-
 
 
 p#p4{
@@ -297,7 +298,7 @@ font-size:22px
 <!--DG TOP BANNER-->
     <div class=banner>
         <h1>
-            <a href="index.html">DG</a>
+            <a href="DGshop2.html">DG</a>
         </h1>
     </div>
 
@@ -314,9 +315,9 @@ font-size:22px
     <span></span>
     <span></span>
     <ul id="menu">
-      <a href="index.html"><li>Shop</li></a>
-      <a href="contact.html"><li>Contact</li></a>
-      <a href="terms.html"><li>Terms</li></a>
+      <a href="DGshop2.html"><li>Shop</li></a>
+      <a href="dgcontact.html"><li>Contact</li></a>
+      <a href="dgtermsnew.html"><li>Terms</li></a>
     </ul>
   </div>
 </nav>
@@ -338,7 +339,7 @@ font-size:22px
 <p id=p3>The recipes we use today are from the family archives. Our ingredients may be published but our baking methods remain a ancestry secret.</p>
 </div>
 <div class=story4>
-<img id=img4 src="DGKitchen.jpeg" alt="DG">
+<img id=img4 src="DGKitchen.JPG" alt="DG">
 <p id=p4>With every box we bake being homemade; we guarantee pure delight with every bite.</p>
 </div>
 </div>
