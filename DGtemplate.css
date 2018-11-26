@@ -3,11 +3,18 @@
   src: url(Bebas_Neue.ttf) format("truetype");
 }
 
-@font-face{
 
-  font-family: shoppingscript;
-  src: url(Shopping_Script_Demo.ttf) format("truetype");
+@font-face { 
+    font-family: shoppingscript; src: url('Shopping_Script_Demo.ttf'); 
 }
+@font-face{ 
+    font-family: shoppingscript_IE; src: url('Shopping_Script_Demo.eot'); 
+}
+.my_font{ 
+    font-family: shoppingscript, shoppingscript_IE, shoppingscript; 
+}
+
+
 
 body, p, div, ul, ol, li, span, strong, h1, h2,h3, img{
   margin:0; 
