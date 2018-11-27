@@ -45,6 +45,18 @@ h1 {
   margin: 0px 0 0 0px;
 }
 
+h1 {
+  font-family: shoppingscript_IE;
+  font-size: 100px;
+  color:#5F442A;
+  font-weight: lighter;
+  height:120px;
+  width:100%;
+  background-color:#FAD03E;/*#FAD03E*/
+  text-align: center;
+  margin: 0px 0 0 0px;
+}
+
 .banner{ 
      position: fixed;
      top: 0;
