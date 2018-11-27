@@ -11,7 +11,7 @@
     font-family: shoppingscript_IE; src: url('Shopping_Script_Demo.eot'); 
 }
 .my_font{ 
-    font-family: shoppingscript, shoppingscript_IE, shoppingscript; 
+    font-family: shoppingscript, shoppingscript_IE; 
 }
 
 
@@ -34,19 +34,7 @@ body {
 /*DG TOP BANNER*/
 
 h1 {
-  font-family: shoppingscript;
-  font-size: 100px;
-  color:#5F442A;
-  font-weight: lighter;
-  height:120px;
-  width:100%;
-  background-color:#FAD03E;/*#FAD03E*/
-  text-align: center;
-  margin: 0px 0 0 0px;
-}
-
-h1 {
-  font-family: shoppingscript_IE;
+  font-family: shoppingscript_IE, shoppingscript;
   font-size: 100px;
   color:#5F442A;
   font-weight: lighter;
