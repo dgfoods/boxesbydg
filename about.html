@@ -14,15 +14,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=0.4">
 
-
-@font-face{
-
-font-family: shoppingscript;
-src: url(Shopping_Script_Demo.ttf) format("truetype");}
-
-@font-face{
-font-family: Bebas;
-src: url(Bebas_Neue.ttf) format("truetype");
+@font-face { 
+    font-family: Bebas; src: url('Bebas_Neue.ttf'); 
+}
+@font-face{ 
+    font-family: Bebas_IE; src: url('Bebas_Neue.eot'); 
+}
+.my_font{ 
+    font-family: Bebas, Bebas_IE; 
+}
+@font-face { 
+    font-family: shoppingscript; src: url('Shopping_Script_Demo.ttf'); 
+}
+@font-face{ 
+    font-family: shoppingscript_IE; src: url('Shopping_Script_Demo.eot'); 
+}
+.my_font{ 
+    font-family: shoppingscript, shoppingscript_IE; 
 }
 
 /*BANNER AND SECTION CSS IN DGTEMPLACENEWCSS*/
@@ -91,7 +99,7 @@ p#p1{
   top: 50%;
   left: 50%;
   transform: translate(0%, -50%);
-  font-family: Bebas;
+  font-family: Bebas, Bebas_IE; 
   letter-spacing: 0.5px;
   color:#5F442A;
   width: 420px;
@@ -111,7 +119,7 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-125%, -50%);
-font-family: Bebas;
+font-family: Bebas, Bebas_IE; 
 letter-spacing: 0.5px;
 color:#5F442A;
 width: 340px;
@@ -133,7 +141,7 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-125%, -50%);
-font-family: Bebas;
+font-family: Bebas, Bebas_IE; 
 letter-spacing: 0.5px;
 color:#5F442A;
 width: 340px;
@@ -153,7 +161,7 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(0%, -50%);
-font-family: Bebas;
+font-family: Bebas, Bebas_IE; 
 letter-spacing: 0.5px;
 color:#5F442A;
 width: 300px;
