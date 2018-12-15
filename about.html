@@ -49,7 +49,7 @@ height:100vh;
 width:100%;
 height:calc(calc(100% - 170px) * 4);
 position:absolute;
-top:170px;
+top:180px;
 background-color:#FAD03E;
 }
 
@@ -62,7 +62,6 @@ height:calc(100vh - 170px);
 position:relative;
 top:0px;
 }
-
 
 
 .story2{
@@ -167,10 +166,16 @@ color:#5F442A;
 width: 300px;
 }
 
+    h3 {
+position: absolute;
+font-family: Bebas, Bebas_IE; 
+top: 25%;
+left: 50%;
+transform: translate(-50%, 0%);
+font-size: 30px;
+word-spacing: 6px;
 
-
-
-
+}
 
 
 
@@ -180,23 +185,30 @@ and (max-device-width : 812px)
 and (-webkit-device-pixel-ratio : 3)
 and (orientation : portrait) {
 
+    h3 {
+position: absolute;
+font-family: Bebas, Bebas_IE; 
+top: 20%;
+left: 50%;
+transform: translate(-50%, 0%);
+font-size: 50px;
+word-spacing: 7px;
 
+}
 
 
 .mainstory{
 width:100%;
 height:calc(100% - 15vmax);
 position:absolute;
-top:15vmax;
+top:25vmax;
 }
-
 
 
 
 .story1{
 height:calc(calc(100vh - 15vmax) / 4);
 }
-
 
 
 .story2{
@@ -223,7 +235,7 @@ p#p2{
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-120%, -40%);
+transform: translate(-120%, -49%);
 font-size:28px;
 width: 300px;
 }
@@ -350,7 +362,7 @@ font-size:22px
 
 <div class=story3>
 <img id=img3 src="Asset8.png" alt="DG">
-<p id=p3>The recipes I use today are from the family archives. The ingredients may be published but my baking methods remain an ancestry secret.</p>
+<p id=p3>The recipes I use today are from the family archives. My ingredients may be published but my baking methods remain an ancestry secret.</p>
 </div>
 <div class=story4>
 <img id=img4 src="Asset5.png" alt="DG">
@@ -360,6 +372,8 @@ font-size:22px
 
 
 </div>
+
+<h3>Welcome to my family</h3>
 
 
 </body>
