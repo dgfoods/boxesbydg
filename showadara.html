@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+
 <html>
 
-<title> DG | Home</title>
+<title>DG | Contact</title>
 
 <head>
+<link rel="stylesheet" type="text/css" href="DGtemplate.css">
 <link rel="shortcut icon" type="image/png" href="thumbnail_bigger.png">
 <meta name="Description" content="DG Vegan Brownies | Homebaked in London">
 <meta name="Keywords" content="Brownies, Vegan, Vegan Brownies, Confectionary, Vegan in London, DG, Daniek Godschalk, Box For Me, Vegan Boxes, Best Brownies, Best Vegan Food, Order Brownies, Boxes by DG, BoxesByDG">
@@ -11,74 +13,9 @@
 </head>
 
 
-
 <style>
 
-.vl {
-  border-left: 3px solid #5F442A;
-  height: 300px;
-  position: absolute;
-  left: 150%;
-  margin-left: -3px;
-  top: -12%;
-}
-
-/*SLIDESHOW*/
-* {box-sizing: border-box}
-body {font-family: Bebas, sans-serif; margin:0}
-.mySlides {display: none;
-min-height:350px;
-min-width: 330px;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 300px;
-  position: absolute;
-    left:15%;
-    top:42%;
-  margin: auto;
-
-}
-
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
 @font-face { 
@@ -90,8 +27,6 @@ img {vertical-align: middle;}
 .my_font{ 
     font-family: Bebas, Bebas_IE; 
 }
-
-
 @font-face { 
     font-family: shoppingscript; src: url('Shopping_Script_Demo.ttf'); 
 }
@@ -102,605 +37,40 @@ img {vertical-align: middle;}
     font-family: shoppingscript, shoppingscript_IE; 
 }
 
+
+.vline
+{
+    position:fixed;
+    top:29%;
+    left:50%;
+    bottom:0; margin:0;
+    border:none;
+    border-right:solid 1px black;
+    z-index:1;
+    width: 2px;
+    height: 325px;
+}
+
 body{
     overflow: scroll;
-    height:calc(100%-40px);
 }
 
-/*NEW*/
 
-.questions{
-  position:absolute;
-  top:40%;
-  left:60%;
-  width:25%;
-  background-color:#FAD03E;/*#FAD03E*/
-}
-
-/* Style the element that is used to open and close the accordion class */
-p.accordion {
-    font-family: Bebas, Bebas_IE;
-    background-color: #FAD03E;
-    color: #5F442A;
-    cursor: pointer;
-    /*padding: 18px 15px 18px 5px;*/
-    width: calc(100%-5px);
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    margin-bottom:10px;
-    font-size:17px;
-    border-radius: 0.5em;
-    letter-spacing: 4px;
-
-}
-
-/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-p.accordion.active, p.accordion:hover {
-    background-color:#FAD03E;
-    color:#5F442A;
-}
-
-/* Unicode character for "plus" sign (+) */
-p.accordion:after {
-    font-family: Arial;
-    content: '\002b'; /*2795/6, 13px*/
-    font-size: 20px;
-    color: darkorange;
-    float: right;
-   
-}
-
-
-/* Unicode character for "minus" sign (-) */
-p.accordion.active:after {
-    content: "\2212"; 
-    color: darkorange;
-}
-
-/* Style the element that is used for the panel class. Panel = the answer shown When the question expands */
-
-div.panel {
-    font-family: Bebas, Bebas_IE;
-    padding: 0 0 0 5px;
-    width: calc(100%-5px);
-    background-color: #FAD03E;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.4s ease-in-out;
-    opacity: 0;
-    margin-bottom:10px;
-    color: darkorange;
-    font-size:16px;
-    letter-spacing: 0.5px;
-}
-
-div.panel.show {
-    opacity: 1;
-    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
-}
-
-
-
-h4{
-font-family: Bebas, Bebas_IE;
-color:#5F442A;
-position:absolute;
-left:20%;
-top:20%;
-font-size:42px;
-letter-spacing: 4px;
-font-weight: lighter;
-}
-
-
-h3{
-font-family: Bebas, Bebas_IE;
-color:#5F442A;
-position:absolute;
-left:65%;
-top:26.5%;
-font-size:42px;
-letter-spacing: 4px;
-font-weight: lighter;
-word-spacing: 1px;
-}
-
-
-.checkout{
-    color:darkorange;
-    font-family: Bebas, Bebas_IE;
-    font-size:20px;
-    letter-spacing: 4px;
-    font-weight: lighter;
-    background-color: transparent;
-    border:none;
-    padding:0px;
-}
-
-
-.STA{
-    font-family: Bebas, Bebas_IE;
-    color:#5F442A;
-    font-size:16px;
-    letter-spacing: 3px;
-    font-weight: lighter;
-}
-
-img#img1{
-width:270px; 
-height:340px;
-}
-img#img2{
-position:absolute;
-top:-6%;
-left:200%;
-width:290px; 
-height:380px;
-}
-
-img#img3{
-position:absolute;
-top:1%;
-left:-2%;
-width:330px; 
-height:350px;
-}
-
-img#img4{
-width:300px; 
-height:340px;
-left: 85%;
-top: 30%;
-}
-
-.allergens{
-color:peru;
-}
-
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : portrait) {
-
-.questions{
-  position:absolute;
-  top:63%;
-  left:20%;
-  width:60%;
- }
-
-div.panel {
-    font-size:33px;
-    letter-spacing: 1px;
-}
-
-
-p.accordion {
-    font-size:40px;
-
-}
-
-h4{
-left:33%;
-top:47%;
-font-size:75px;
-letter-spacing: 6px;
-
-}
-
-
-.STA{
-    font-size:40px;
-}
-
-.checkout{
-font-size:40px;
-}
-input.checkout{
-  position:absolute;
-  top:90%;
-  left:38%;
-}
-
-
-
-
-p.accordion:after {
-    font-size: 30px;
-} 
-
-
-.slideshow-container {
-  position: absolute;
-    left:28.25%;
-    top:15%;
-}
-
-
-
-#one{
-  left:30%;
-}
-
-#two{
-  left:70%
-}
-
-#three{
-  left:110%;
-}
-
-.dot {
-  height: 28px;
-  width: 28px;
-}
-
-img#img1{
-position:absolute;
-left:-7%;
-width:420px; 
-height:500px;
-}
-
-img#img2{
-width:300px; 
-height:340px;
-}
-
-img#img3{
-position:absolute;
-top:7.5%;
-left:-2%;
-width:460px; 
-height:480px;
-}
-
-.mySlides {
-min-width: 460px;
-min-height:500px;
-}
-}
-
-
-/*MEDIA LANDSCAPE MODE*/
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : landscape) {
-
-.questions{
-  position:absolute;
-  top:35%;
-  left:60%;
-  width:35%;
-  background-color:#FAD03E;/*#FAD03E*/
-}
-
-.checkout{
-    font-size:20px;
-}
-input.checkout{
-  position:absolute;
-  top:90%;
-  left:0%;
-}
-
-.slideshow-container {
-  position: absolute;
-    left:18%;
-    top:23%
-}
-
-h4{
-position:absolute;
-left:60%;
-top:15%;
-font-size:30px;
-
-}
 
-.dot{
-height: 13px;
-width: 13px;
-position:absolute;
-top:100%;
-}
-
-p.accordion {
-    font-family: Bebas;
-    background-color: #FAD03E;
-    color: #5F442A;
-    cursor: pointer;
-    /*padding: 18px 15px 18px 5px;*/
-    width: calc(100%-5px);
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    margin-bottom:10px;
-    font-size:18px;
-    border-radius: 0.5em;
-    letter-spacing: 4px;
-}
-
-
-p.accordion:after {
-    font-size: 20px;
-} 
-
-div.panel {
-    font-family: Bebas;
-    padding: 0 0 0 5px;
-    width: 100%;
-    background-color: #FAD03E;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.4s ease-in-out;
-    opacity: 0;
-    margin-bottom:10px;
-    color: darkorange;
-    font-size:15px;
-    letter-spacing: 1px;
-}
-
-
-.STA{
-    font-size:15px;
-}
-
-#one{
-  left:25%;
-}
-
-#two{
-  left:50%
-}
-
-#three{
-  left:75%;
-}
-
-#menu li
-{
-  font-size: 18px;
-}
-
-}
-
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 2)
-and (orientation : portrait) {
-
-.questions{
-  position:absolute;
-  top:63%;
-  left:20%;
-  width:60%;
- }
-
-div.panel {
-    font-size:33px;
-    letter-spacing: 1px;
-}
-
-
-p.accordion {
-    font-size:40px;
-
-}
-
-h4{
-left:33%;
-top:47%;
-font-size:75px;
-letter-spacing: 6px;
-
-}
-
-
-.STA{
-    font-size:40px;
-}
-
-.checkout{
-font-size:40px;
-}
-input.checkout{
-  position:absolute;
-  top:90%;
-  left:38%;
-}
-
-
-
-
-p.accordion:after {
-    font-size: 30px;
-} 
-
-
-.slideshow-container {
-  position: absolute;
-    left:28.25%;
-    top:15%;
-}
-
-
-
-#one{
-  left:30%;
-}
-
-#two{
-  left:70%
-}
-
-#three{
-  left:110%;
-}
-
-.dot {
-  height: 28px;
-  width: 28px;
-}
-img#img1{
-position:absolute;
-left:-7%;
-width:420px; 
-height:500px;
-}
-img#img2{
-width:300px; 
-height:340px;
-}
-img#img3{
-position:absolute;
-top:7.5%;
-left:-2%;
-width:460px; 
-height:480px;
-}
-
-.mySlides {
-min-width: 460px;
-min-height:500px;
-}
-}
-
-
-/*MEDIA LANDSCAPE MODE*/
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 2)
-and (orientation : landscape) {
-
-.questions{
-  position:absolute;
-  top:35%;
-  left:60%;
-  width:35%;
-  background-color:#FAD03E;/*#FAD03E*/
-}
-
-.checkout{
-    font-size:20px;
-}
-input.checkout{
-  position:absolute;
-  top:90%;
-  left:0%;
-}
-
-.slideshow-container {
-  position: absolute;
-    left:18%;
-    top:23%
-}
-
-h4{
-position:absolute;
-left:60%;
-top:15%;
-font-size:30px;
-
-}
-
-.dot{
-height: 13px;
-width: 13px;
-position:absolute;
-top:100%;
-}
-
-p.accordion {
-    font-family: Bebas;
-    background-color: #FAD03E;
-    color: #5F442A;
-    cursor: pointer;
-    /*padding: 18px 15px 18px 5px;*/
-    width: calc(100%-5px);
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    margin-bottom:10px;
-    font-size:18px;
-    border-radius: 0.5em;
-    letter-spacing: 4px;
-}
-
-
-p.accordion:after {
-    font-size: 20px;
-} 
-
-div.panel {
-    font-family: Bebas;
-    padding: 0 0 0 5px;
-    width: 100%;
-    background-color: #FAD03E;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.4s ease-in-out;
-    opacity: 0;
-    margin-bottom:10px;
-    color: darkorange;
-    font-size:15px;
-    letter-spacing: 1px;
-}
-
-
-.STA{
-    font-size:15px;
-}
-
-#one{
-  left:25%;
-}
-
-#two{
-  left:50%
-}
-
-#three{
-  left:75%;
-}
-
-#menu li
-{
-  font-size: 18px;
-}
-
-}
 </style>
-
-
 
 
 <body>
 
 
+<div class=banner>
+<h1>
+<a href="index.html">DG</a>
+</h1>
+</div>
 
 
-<!--DG TOP BANNER-->
-    <div class=banner>
-        <h1>
-            <a href="index.html">DG</a>
-        </h1>
-    </div>
-
-    <h3> BOX FOR US </h3>
-
-
-
-<!--HAMBURGER MENU-->
+ <!--HAMBURGER MENU-->
 <nav role="navigation">
   <div id="menuToggle">
     <input type="checkbox" />
@@ -708,90 +78,15 @@ div.panel {
     <span></span>
     <span></span>
     <ul id="menu">
+      <a href="index.html"><li>Shop</li></a>
       <a href="story.html"><li>Story</li></a>
-      <a href="contact.html"><li>Contact</li></a>
       <a href="terms.html"><li>Terms</li></a>
     </ul>
   </div>
-</nav>
+</nav> 
 
-<h4> BOX FOR ME</h4>
-
-
-
-
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <img id=img1 src="dgshopimg3.png">
-    <img id=img2 src="NEWBOXFORUSUSUS.png">
-  </div>
-
-  <div class="vl"></div>
-
-  </div>
-
-
-
-<script>
-document.addEventListener("DOMContentLoaded", function(event) { 
-
-
-var acc = document.getElementsByClassName("accordion");
-var panel = document.getElementsByClassName('panel');
-
-for (var i = 0; i < acc.length; i++) {
-    acc[i].onclick = function() {
-        var setClasses = !this.classList.contains('active');
-        setClass(acc, 'active', 'remove');
-        setClass(panel, 'show', 'remove');
-
-        if (setClasses) {
-            this.classList.toggle("active");
-            this.nextElementSibling.classList.toggle("show");
-        }
-    }
-}
-
-function setClass(els, className, fnName) {
-    for (var i = 0; i < els.length; i++) {
-        els[i].classList[fnName](className);
-    }
-}
-
-});
-</script>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
+<hr class="vline" />
 
 </body>
-
 
 </html>
